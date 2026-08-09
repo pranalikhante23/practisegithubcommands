@@ -1,0 +1,23 @@
+
+
+
+function calculateEMI(P,annualRate,tenureYear){
+ // from param we are getting yearly data, but in fommula we are having monthy data so we have to convert data into monthly.
+
+ let R= annualRate/(12*100)
+ let N= tenureYear*12
+
+ const numerator= P*R*Math.pow(1+R,N)
+const denominator = Math.pow(1+R,N)-1
+const EMI= numerator/denominator
+return EMI
+}
+
+const resultEMI1=calculateEMI(500000,10,5)
+console.log("Monthly EMI amount "+resultEMI1)
+
+const resultEMI2=calculateEMI(800000,9,7)
+console.log("Monthly EMI amount "+resultEMI2)
+
+const resultEMI3=calculateEMI(300000,8.5,3)
+console.log("Monthly EMI amount "+resultEMI3)

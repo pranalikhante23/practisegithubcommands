@@ -1,0 +1,26 @@
+import { log } from "console";
+
+function checkEvenOdd(num,callback){
+
+    if(num%2==0){
+        callback("even")
+    }
+    else{
+        callback("odd")
+    } }
+
+checkEvenOdd(10,value)
+
+checkEvenOdd(15,value)
+// callback=even= value
+
+//value("even")
+function value(result){
+    console.log(result);
+    
+}
+
+
+
+
+

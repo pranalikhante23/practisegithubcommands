@@ -1,0 +1,20 @@
+
+
+function containsVowel(inputString){
+ let vowels ="aeiou"
+    for(let value of inputString.toLowerCase() ){
+
+        if  (vowels.includes(value)){
+            return "vowelfound"
+
+        } 
+  
+
+
+}
+
+  return "vowelNotfound"
+}
+console.log(containsVowel("Mukesh"))
+console.log(containsVowel("Rhythm"))
+console.log(containsVowel("AUTOMATION"))
